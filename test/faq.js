@@ -3,7 +3,7 @@ describe("Homepage FAQs Accordian", () => {
         browser.url("/");
         let firstHeight = browser.getCssProperty(".accordion .accordion-item:first-child .accordion-content", "height");
 
-        console.log(firstHeight)
+        console.log(firstHeight);
 
         expect(firstHeight.parsed.value).to.be.greaterThan(0)
     } )
